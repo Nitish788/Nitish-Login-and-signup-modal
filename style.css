@@ -1,0 +1,358 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(158 158 158 / 14%);
+}
+
+.container {
+    width: 398px;
+    height: 600px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 14px 28px rgba(128, 128, 128, 0.507);
+}
+
+input {
+    display: block;
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.151);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-bottom: 2px solid rgba(255, 105, 180, 0.795);
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Home page */
+
+.container-1 button {
+    position: relative;
+    top: 170px;
+    left: 65px;
+    z-index: 3;
+}
+
+.conta-1 {
+    position: relative;
+    top: 6rem;
+    font-size: 3rem;
+    right: 5rem;
+    font-family: "Times New Roman", Times, serif;
+    color: #0481f5;
+}
+
+button {
+    width: 17rem;
+    height: 3.5rem;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.login:hover {
+    transform: translateX(10px);
+}
+
+.signup:hover {
+    transform: translateY(10px);
+}
+
+.signup {
+    margin-top: 2.3rem;
+    background-color: royalblue;
+    color: white;
+    border: 2px solid white;
+}
+
+.login {
+    background-color: rgba(255, 105, 180);
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 394px;
+    height: 230px;
+    left: 434.5px;
+    bottom: -1.3rem;
+    background-color: royalblue;
+}
+
+
+/* Login page */
+
+.container-2 {
+    position: relative;
+    top: 200px;
+    left: 80px;
+    width: 17rem;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+input::placeholder {
+    opacity: 0.5;
+    font-size: 1rem;
+}
+
+.conta-2 {
+    position: absolute;
+    top: -9.5rem;
+    left: -1rem;
+    font-size: 2.5rem;
+    font-family: "Anton", sans-serif;
+    color: #0481f5;
+}
+
+.loginpassword {
+    margin-top: 1.2rem;
+}
+
+.log2 {
+    position: relative;
+    right: 15px;
+}
+
+#loginsubmit {
+    padding: 1rem 2.5rem;
+    margin-top: 20px;
+    position: relative;
+    right: 1rem;
+    margin-bottom: 5px;
+    width: 17rem;
+    border-radius: 24px;
+    background-color: rgba(255, 105, 180, 0.795);
+    color: white;
+}
+
+.entryoption img {
+    width: 42px;
+    height: 40px;
+}
+
+.entryoption {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.google {
+    color: #0481f5;
+    position: relative;
+    top: 3.3rem;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 0.92rem;
+}
+
+.forgot {
+    position: relative;
+    right: 20px;
+    top: 5px;
+    color: rgb(128, 128, 128);
+}
+
+.register {
+    position: relative;
+    top: 7.7rem;
+    color: white;
+    display: flex;
+}
+
+.register::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    left: -80px;
+    top: -10px;
+    width: 397px;
+    height: 44px;
+    background-color: royalblue;
+    z-index: 2;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+.register p {
+    opacity: 0.7;
+    z-index: 3;
+}
+
+.register a {
+    z-index: 3;
+}
+
+
+/* Sign up page*/
+
+.container-3 {
+    position: relative;
+    top: 4rem;
+    left: 1rem;
+    padding: 40px;
+}
+
+.term {
+    position: relative;
+    right: 8px;
+    top: 2.25rem;
+    height: 20px;
+    width: 16px;
+}
+
+h2 {
+    position: relative;
+    bottom: 3.5rem;
+    left: 2rem;
+}
+
+.new {
+    position: relative;
+    top: 2rem;
+    left: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 17rem;
+    height: 3.5rem;
+    border-radius: 24px;
+    background-color: rgba(255, 105, 180, 0.795);
+    color: white;
+}
+
+.google-1 {
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+    color: #0481f5;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 0.92rem;
+}
+
+.welcome p {
+    opacity: 0.7;
+    z-index: 3;
+    position: relative;
+    top: 15px;
+}
+
+.welcome a {
+    z-index: 3;
+    position: relative;
+    top: 15px;
+}
+
+.welcome {
+    position: relative;
+    top: 5.3rem;
+    left: 2rem;
+    color: white;
+    display: flex;
+}
+
+.welcome::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    left: -88px;
+    top: 1px;
+    width: 397px;
+    height: 44px;
+    background-color: royalblue;
+    z-index: 2;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+.container-forgot {
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 14px 28px rgba(128, 128, 128, 0.507);
+    text-align: center;
+}
+
+.container-forgot h1 {
+    font-size: 3rem;
+    position: relative;
+    top: 2rem;
+}
+
+hr {
+    position: relative;
+    top: 3rem;
+}
+
+.container-forgot h4 {
+    position: relative;
+    top: 4.3rem;
+}
+
+.forgotemail {
+    position: relative;
+    top: 5.5rem;
+    left: 3.2rem;
+    width: 30rem;
+}
+
+.sendpassword {
+    position: relative;
+    top: 7rem;
+    left: 5.6rem;
+    width: 25rem;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #5f9ea0;
+    color: white;
+}
+
+.cancel {
+    position: relative;
+    top: 8rem;
+    left: 14rem;
+    height: 3rem;
+    width: 6rem;
+    border-radius: 0px;
+    background-color: rgb(243, 26, 26);
+    color: white;
+}
+
+.cancel:hover {
+    transform: scale(1.1);
+}
+
+.forgot:hover {
+    cursor: pointer;
+}

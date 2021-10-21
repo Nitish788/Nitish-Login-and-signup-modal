@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-1">
+            <pre class="conta-1">
+                SOCIAL
+                 BUZZ
+            </pre
+        >
+        <div class="btn">
+          <button class="btnlogin login">SIGN IN</button>
+          <button class="btnsignup signup">Register</button>
+        </div>
+      </div>
+      <div class="container-2 hidden">
+        <pre class="conta-2">
+         SOCIAL
+          BUZZ</pre
+        >
+        <form action="">
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            class="log2"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="E-mail must contain @"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            class="loginpassword log2"
+            placeholder="Type Password"
+            minlength="8"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+            title="Should contain 1UPPERCASE, 1lowercase, 1number and minimum length is 8"
+            required
+          />
+          <input type="submit" value="SIGN IN" id="loginsubmit" />
+        </form>
+        <p class="forgot">forgot password?</p>
+
+        <a href="https://accounts.google.com/signup">
+          <div class="entryoption google">
+            <img src="img/google.png" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>Sign in With Google</p>
+          </div>
+        </a>
+        <div class="register">
+          <p>Don't have an account?</p>
+          &nbsp;
+          <a class="btnsignup">Register Here</a>
+        </div>
+      </div>
+      <div class="container-3 hidden">
+        <h2>Create new Account</h2>
+        <form action=" ">
+          <input type="text" name="name" placeholder="Username" />
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="E-mail must contain @"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Type Password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+            title="Should contain 1UPPERCASE, 1lowercase, 1number and minimum length is 8"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Re-enter Password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+            title="Should contain 1UPPERCASE, 1lowercase, 1number and minimum length is 8"
+            required
+          />
+
+          <input type="checkbox" name="term" class="term" /><br />&nbsp;&nbsp; I
+          agree with term and conditions.
+          <input type="submit" value="REGISTER" class="new" />
+        </form>
+        <a href="https://accounts.google.com/signup">
+          <div class="entryoption google-1">
+            <img src="img/google.png" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>Sign in With Google</p>
+          </div>
+        </a>
+        <div class="welcome">
+          <p>Already have an account?</p>
+          &nbsp;
+          <a class="btnlogin">Sign in</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-forgot hidden">
+      <h1>What's my password?</h1>
+      <hr />
+
+      <form action="">
+        <h4>If you have forgotten your password you can reset it here.</h4>
+        <input
+          type="email"
+          name="email"
+          class="forgotemail"
+          placeholder="E-mail"
+        />
+        <input
+          type="submit"
+          value="Send My Password"
+          class="sendpassword"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="E-mail must contain @"
+          required
+        />
+      </form>
+      <button class="cancel">Cancel</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
